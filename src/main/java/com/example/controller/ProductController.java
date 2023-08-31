@@ -14,7 +14,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @RequestMapping("/products")
+    @RequestMapping("/productss")
     public Object products(Model m) {
         List<Product> ps = productService.listProducts();
         m.addAttribute("ps", ps);
